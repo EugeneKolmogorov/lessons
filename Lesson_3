@@ -1,0 +1,82 @@
+# Задача № 16
+
+# N = int(input('Введите число N: '))
+# A = []
+# for i in range(N):
+#     A.append(int(input('ВВедите число для массива: ')))
+
+# x = int(input('Введите число для проверки: '))
+# count = 0
+# for i in A:
+#     if x == i:
+#         count += 1
+
+# print(count)
+
+# Задача № 18
+
+# N = int(input('Введите число N: '))
+# A = []
+# for i in range(N):
+#     A.append(int(input('ВВедите число для массива: ')))
+
+# x = int(input('Введите число для проверки: '))
+# y = 0
+# while i < len(A):
+#     for i in A:
+#         if x >= i:
+#             y = i
+
+# print(y)
+
+# Задача № 20
+
+letters_1 = ['A', 'E', 'I', 'O', 'U', 'L', 'N', 'S', 'T', 'R']
+letters_2 = ['D', 'G']
+letters_3 = ['B', 'C', 'M', 'P']
+letters_4 = ['F', 'H', 'V', 'W', 'Y']
+letters_5 = ['K']
+letters_6 = ['J', 'X']
+letters_7 = ['Q', 'Z']
+letters_11 = ['А', 'В', 'Е', 'И', 'Н', 'О', 'Р', 'С', 'Т']
+letters_12 = ['Д', 'К', 'Л', 'М', 'П', 'У']
+letters_13 = ['Б', 'Г', 'Ё', 'Ь', 'Я']
+letters_14 = ['Й', 'Ы']
+letters_15 = ['Ж', 'З', 'Х', 'Ц', 'Ч']
+letters_16 = ['Ш', 'Э', 'Ю']
+letters_17 = ['Ф', 'Щ', 'Ъ']
+
+
+word = input('Введите слово: ')
+count = 0
+for i in word:
+    if i.upper() in letters_1:
+        count += 1
+    if i.upper() in letters_2:
+        count += 2
+    if i.upper() in letters_3:
+        count += 3
+    if i.upper() in letters_4:
+        count += 4
+    if i.upper() in letters_5:
+        count += 5
+    if i.upper() in letters_6:
+        count += 8
+    if i.upper() in letters_7:
+        count += 10
+    if i.upper() in letters_11:
+        count += 1
+    if i.upper() in letters_12:
+        count += 2
+    if i.upper() in letters_13:
+        count += 3
+    if i.upper() in letters_14:
+        count += 4
+    if i.upper() in letters_15:
+        count += 5
+    if i.upper() in letters_16:
+        count += 8
+    if i.upper() in letters_17:
+        count += 10
+
+print(count)
